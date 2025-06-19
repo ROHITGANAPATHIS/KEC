@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Top 5 Movies</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: linear-gradient(120deg, #0f0f0f, #1c1c1c);
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      box-sizing: border-box;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: #e62429;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .page-description {
+      max-width: 800px;
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 50px;
+      color: #bbbbbb;
+      font-style: italic;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .movie-card {
+      background-color: #2b2b2b;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-10px);
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .movie-title {
+      font-size: 22px;
+      font-weight: bold;
+      color: #e62429;
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .movie-info {
+      font-size: 14px;
+      color: #dddddd;
+      margin-bottom: 10px;
+      line-height: 1.6;
+    }
+
+    .summary {
+      color: #aaaaaa;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      color: #666;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Top 5 Movies</h1>
+  <p class="page-description">A handpicked collection of films that left a deep impact on audiences — from global blockbusters to Tamil cinematic masterpieces.</p>
+
+  <div class="movie-grid">
+
+    <div class="movie-card">
+      <img src="spiderman.jpg" alt="The Amazing Spider-Man 2" />
+      <div class="card-content">
+        <div class="movie-title">Spider-Man</div>
+        <div class="movie-info">
+          <strong>Released:</strong> 2014<br>
+          <strong>Director:</strong> Marc Webb<br>
+          <strong>Cast:</strong> Andrew garfield, Emma stone
+        </div>
+        <div class="summary"><strong>Summary:</strong> When Peter Parker’s identity is revealed, he turns to Doctor Strange for help—leading to a multiverse collision with past Spider-Men.</div>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="thalapathi.jpeg" alt="Thalapathi" />
+      <div class="card-content">
+        <div class="movie-title">Thalapathi</div>
+        <div class="movie-info">
+          <strong>Released:</strong> 1991<br>
+          <strong>Director:</strong> Mani Ratnam<br>
+          <strong>Cast:</strong> Rajinikanth, Mammootty, Arvind Swamy
+        </div>
+        <div class="summary"><strong>Summary:</strong> A modern retelling of Karna’s story from Mahabharata, blending action, friendship, and sacrifice in a gripping underworld setting.</div>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="sitaraman.jpeg" alt="Sita Ramam" />
+      <div class="card-content">
+        <div class="movie-title">Sita Ramam</div>
+        <div class="movie-info">
+          <strong>Released:</strong> 2022<br>
+          <strong>Director:</strong> Hanu Raghavapudi<br>
+          <strong>Cast:</strong> Dulquer Salmaan, Mrunal Thakur, Rashmika Mandanna
+        </div>
+        <div class="summary"><strong>Summary:</strong> A poetic love story told through lost letters between an army officer and a mysterious woman named Sita — crossing time and borders.</div>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="nayakan.jpg" alt="Nayakan" />
+      <div class="card-content">
+        <div class="movie-title">Nayakan</div>
+        <div class="movie-info">
+          <strong>Released:</strong> 1987<br>
+          <strong>Director:</strong> Mani Ratnam<br>
+          <strong>Cast:</strong> Kamal Haasan, Saranya
+        </div>
+        <div class="summary"><strong>Summary:</strong> Loosely inspired by The Godfather, this crime drama tells the story of Velu Naicker, a don revered and feared in Bombay’s slums.</div>
+      </div>
+    </div>
+
+    <div class="movie-card">
+      <img src="anbe_sivam.jpg" alt="Anbe Sivam" />
+      <div class="card-content">
+        <div class="movie-title">Anbe Sivam</div>
+        <div class="movie-info">
+          <strong>Released:</strong> 2003<br>
+          <strong>Director:</strong> Sundar C.<br>
+          <strong>Cast:</strong> Kamal Haasan, R. Madhavan
+        </div>
+        <div class="summary"><strong>Summary:</strong> A touching journey of two strangers with opposing ideologies who discover the meaning of love, life, and God through each other.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 Movie Tribute | Designed by [Your Name]
+  </footer>
+
+</body>
+</html>
