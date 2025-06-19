@@ -1,0 +1,36 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #282c34;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+.choices {
+  margin-top: 30px;
+}
+
+.choice {
+  display: inline-block;
+  margin: 10px;
+  padding: 20px 30px;
+  font-size: 18px;
+  background: #61dafb;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.choice:hover {
+  background: #21a1f1;
+}
+
+#result {
+  margin-top: 40px;
+  font-size: 1.5em;
+}
